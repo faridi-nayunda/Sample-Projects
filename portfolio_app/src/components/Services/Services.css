@@ -1,0 +1,168 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.services-title {
+    position: relative;
+}
+
+.services-title h1 {
+    padding: 0px 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+/* .services-title img{
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     z-index: -1;
+} */
+
+.services-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 4.0s;
+    cursor: pointer;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.services-format h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.services-format h2 {
+    font-size: 30px;
+    font-weight: 500;
+    background: linear-gradient(267deg, #92FE9D 0%, #00C9FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.services-format p {
+    color: #d4d4d4;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 300px;
+}
+
+.services-readmore {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.services-format:hover {
+    border: 2px solid #00C9FF;
+    background-image: linear-gradient(45deg, #023306, #024909);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.services-readmore img {
+    width: 25px;
+    filter: invert(100%) brightness(100%);
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+    .services {
+        margin: 80px 80px; /* Reduce margin for medium screens */
+    }
+
+    .services-title h1 {
+        font-size: 28px; /* Reduce font size */
+    }
+
+    .services-format {
+        padding: 30px; /* Adjust padding */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr 1fr; /* Reduce columns for medium screens */
+        gap: 20px; /* Adjust gap */
+    }
+
+    .services-format h2 {
+        font-size: 26px; /* Adjust heading size */
+    }
+
+    .services-format p {
+        font-size: 16px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        margin: 50px 20px; /* Adjust margin for smaller screens */
+    }
+
+    .services-title h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+
+    .services-format {
+        padding: 20px; /* Further reduce padding */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        gap: 15px; /* Reduce gap between items */
+    }
+
+    .services-format h2 {
+        font-size: 24px; /* Adjust heading size */
+    }
+
+    .services-format p {
+        font-size: 15px; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        margin: 40px 10px; /* Even smaller margin for very small screens */
+    }
+
+    .services-title h1 {
+        font-size: 22px; /* Further reduce font size */
+    }
+
+    .services-format {
+        padding: 15px; /* Reduce padding even further */
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 10px; /* Adjust gap */
+    }
+
+    .services-format h2 {
+        font-size: 22px; /* Adjust heading size */
+    }
+
+    .services-format p {
+        font-size: 14px; /* Adjust paragraph font size */
+    }
+}
